@@ -8,3 +8,6 @@ EP2: IN, BULK or INTERRUPT
 EP3: IN, BULK or INTERRUPT
 
 Next step - desing sniffer based on TX2UL + galvanic isolation
+
+
+Thank you for "x8-999-github" for some good advices and idea.
