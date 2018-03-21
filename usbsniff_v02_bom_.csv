@@ -1,0 +1,30 @@
+Component,Description,Part,References,Value,Footprint,Quantity Per PCB,Datasheet
+1,Unpolarized capacitor,C_Small,C6 C7 C8 C13,0.1uF,C_0805,4,
+2,Polarised capacitor,CP_Small,C3 C11,10uF,TantalC_SizeB_EIA-3528_Reflow,2,
+3,Unpolarized capacitor,C_Small,C9 C10 C12,1uF,C_0805,3,
+4,Unpolarized capacitor,C_Small,C1 C2 C4 C5,20pF,C_0805,4,
+5,,LED,D1 D2,LED,LED-3MM,2,
+6,Connector 01x02,CONN_01X02,P1,CONN_01X02,Pin_Header_Straight_1x02,1,
+7,Connector 01x08,CONN_01X08,P2 P3,CONN_01X08,Pin_Header_Straight_1x08,2,
+8,Resistor,R_Small,R1 R2 R3 R4,33 Ohm,R_0805,4,
+9,Resistor,R,R5 R6,470 Ohm,R_0805,2,
+10,Adjustable/Fixed Low Dropout Linear Regulator,AMS1117,U1,AMS1117,SOT-223,1,
+11,USB Peripheral/Host Controller with SPI Interface,MAX3421E,U2 U3,MAX3421E,TQFP-32_5x5mm,2,
+12,"socket USB type A, horizontal placement",USB_type_A,X1,USB_type_A,USBA_1J_DS_1095_WR,1,
+13,,micro_USB,X2,micro_USB,micro_USB_KLS1-233-0-0-1-T,1,
+14,Two pin crystal,Crystal_Small,Y1 Y2,12MHz,HC49-SM,2,
+
+
+
+
+
+Component Groups:,14
+Component Count:,31
+Fitted Components:,31
+Number of PCBs:,1
+Total components:,31
+Schematic Version:,
+Schematic Date:,
+BoM Date:,Wed 21 Mar 2018 09:01:28 PM MSK
+Schematic Source:,/home/xarlan/git/usbsniff/usbsniff_v02.sch
+KiCad Version:,Eeschema 4.0.2+dfsg1-stable

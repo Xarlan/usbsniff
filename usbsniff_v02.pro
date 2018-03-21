@@ -1,4 +1,4 @@
-update=Tue 13 Mar 2018 11:36:04 PM MSK
+update=Wed 21 Mar 2018 09:01:04 PM MSK
 version=1
 last_client=kicad
 [cvpcb]
@@ -6,7 +6,7 @@ version=1
 NetIExt=net
 [eeschema]
 version=1
-LibDir=../lib
+LibDir=/home/xarlan/git/kicad-lib
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -37,11 +37,21 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=pcb
+LibName30=/home/xarlan/git/kicad-lib/symbols
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=usbsniff_v02_max.net
+LastNetListRead=usbsniff_v03.net
 PadDrill=0.762
 PadDrillOvalY=0.762
 PadSizeH=1.524
