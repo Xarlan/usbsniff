@@ -1,4 +1,4 @@
-update=Wed 21 Mar 2018 09:01:04 PM MSK
+update=Fri 23 Mar 2018 02:32:06 PM MSK
 version=1
 last_client=kicad
 [cvpcb]
@@ -38,16 +38,6 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/xarlan/git/kicad-lib/symbols
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [pcbnew]
 version=1
 PageLayoutDescrFile=
@@ -67,5 +57,15 @@ SolderMaskMinWidth=0
 DrawSegmentWidth=0.2
 BoardOutlineThickness=0.15
 ModuleOutlineThickness=0.15
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [general]
 version=1
