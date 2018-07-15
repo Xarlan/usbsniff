@@ -3,7 +3,7 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := usb2_sniffer
+PROJECT_NAME := usb_sniffer
 
 include $(IDF_PATH)/make/project.mk
 
