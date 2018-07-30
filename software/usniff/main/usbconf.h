@@ -42,6 +42,15 @@ typedef struct {
 } max3421e_msg;
 
 typedef struct {
+			uint8_t		reg;
+			uint8_t		rw;
+			uint8_t		tx_data[MAX_BUF_USB_TX];
+    			uint16_t 	tx_len;
+    			uint8_t 	rx_data[MAX_BUF_USB_RX];
+    			uint16_t 	rx_len;
+} MAX3421Emsg;
+
+typedef struct {
 	spi_device_handle_t spi_host;
 	spi_device_handle_t spi_device;
 } xHwndSpi;
