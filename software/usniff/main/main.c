@@ -212,6 +212,21 @@ void max3421e_rx_tx(spi_device_handle_t hwnd_spi, max3421e_msg *data)
     ESP_ERROR_CHECK(spi_device_transmit(hwnd_spi, &msg_spi));
 }
 
+void max3421e_rx_tx2(spi_device_handle_t hwnd_spi, max3421e_msg *data)
+{
+    spi_transaction_t msg_spi;
+
+		msg_spi.addr		= 0;
+		msg_spi.cmd		= 0;
+		msg_spi.flags		= 0;
+		msg_spi.length		= (data->tx_len > data->rx_len) ? 8 * data->tx_len : 8 * data->rx_len;
+		msg_spi.tx_buffer	= data->rw ? data->tx_data : NULL;
+		msg_spi.rx_buffer	= (data->rx_len) != 0 ? data->rx_data : NULL;
+		msg_spi.rxlength	= data->rx_len;
+		msg_spi.user		= NULL;
+
+    ESP_ERROR_CHECK(spi_device_transmit(hwnd_spi, &msg_spi));
+}
 
 
 /*
