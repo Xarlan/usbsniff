@@ -79,6 +79,103 @@ file, You can obtain one at http://mozilla.org/MPL/2.0/
 #define DIR_WR      0x2
 #define DIR_RD      0x0
 
+/************************
+	Register R11 - EPIRQ
+	  HOST		Perip
+	   -          +
+************************/
+#define bIN0BAVIRQ	0x01
+#define bOUT0DAVIRQ 0x02
+#define bOUT1DAVIRQ 0x04
+#define bIN2BAVIRQ	0x08
+#define bIN3BAVIRQ	0x10
+#define bSUDAVIRQ	0x20
+
+/************************
+	Register R13 - USBIRQ
+	  HOST		Perip
+	   +          +
+************************/
+#define bOSCOKIRQ  0x01
+#define bRWUDNIRQ  0x02
+#define bBUSACTIRQ 0x04
+#define bURESIRQ   0x08
+#define bSUSPIRQ   0x10
+#define bNOVBUSIRQ 0x20
+#define bVBUSIRQ   0x40
+#define bURESDNIRQ 0x80
+
+
+
+/*
+	Register R17 - PINCTL
+	  HOST		Perip
+	   +          +
+*/
+#define	bGPXA		0x1
+#define bGPXB		0x2
+#define bPOSINT		0x4
+#define bINTLEVEL	0x8
+#define bFDUPSPI	0x10
+#define bEP1INAK	0x20
+#define bEP2INAK	0x40
+#define bEP3INAK	0x80
+
+
+/*
+	Register R25 - HIRQ
+	  HOST		Perip
+	   +          -
+*/
+#define	bBUSEVENTIRQ	0x1
+#define bRWUIRQ			0x2
+#define bRCVDAVIRQ		0x4
+#define bSNDBAVIRQ		0x8
+#define bSUSDNIRQ		0x10
+#define bCONDETIRQ		0x20
+#define bFRAMEIRQ		0x40
+#define bHXFRDNIRQ		0x80
+
+
+/*
+	Register R27 - MODE
+	  HOST		Perip
+	   +          +
+*/
+#define	bHOST		0x1
+#define bLOWSPEED	0x2
+#define bHUBPRE		0x4
+#define bSOFKAENAB	0x8
+#define bSEPIRQ		0x10
+#define bDELAYISO	0x20
+#define bDMPULLDN	0x40
+#define bDPPULLDN	0x80
+
+/************************
+	Register R29 - HCTL
+	  HOST		Perip
+	   +          -
+************************/
+#define bBUSRST        0x01
+#define bFRMRST        0x02
+#define bSAMPLEBUS     0x04
+#define bSIGRSM        0x08
+#define bRCVTOG0       0x10
+#define bRCVTOG1       0x20
+#define bSNDTOG0       0x40
+#define bSNDTOG1       0x80
+
+
+/************************
+	Register R31 - HRSL
+	  HOST		Perip
+	   +          -
+************************/
+#define bRCVTOGRD   0x10
+#define bSNDTOGRD   0x20
+#define bKSTATUS    0x40
+#define bJSTATUS    0x80 
+
 
 #endif /* MAIN_MAX3421E_H_ */
 
